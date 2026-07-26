@@ -208,6 +208,7 @@ honey-well/
 │   └── test_pipeline.py     # Automated testing suite
 ├── README.md                # Project documentation
 ├── REPORT.md                # Project assumptions, metrics, and limitations
+├── SIH_SUBMISSION.md        # SIH official submission details and registration metadata
 └── streamlit_app.py         # Streamlit dashboard
 ```
 
