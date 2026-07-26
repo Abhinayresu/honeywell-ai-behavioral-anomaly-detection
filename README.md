@@ -144,7 +144,7 @@ An interactive Streamlit dashboard (`streamlit_app.py`) provides:
 ### Installation Steps
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/honey-well.git
+    git clone https://github.com/Abhinayresu/honeywell-ai-behavioral-anomaly-detection.git
     cd honey-well
     ```
 2.  **Initialize Virtual Environment**:
