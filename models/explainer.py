@@ -13,7 +13,9 @@ class AnomalyExplainer:
         self.model = classifier_model
         # Use a small sample of training data as the background dataset
         background_sample = training_features_df.sample(min(100, len(training_features_df)), random_state=42)
-        self.explainer = shap.TreeExplainer(self.model, background_sample)
+        # TreeExplainer expects the underlying XGBClassifier model, not our custom wrapper class
+        underlying_model = getattr(classifier_model, "model", classifier_model)
+        self.explainer = shap.TreeExplainer(underlying_model, background_sample)
 
     def explain_instance(self, feature_row: pd.DataFrame) -> dict:
         """

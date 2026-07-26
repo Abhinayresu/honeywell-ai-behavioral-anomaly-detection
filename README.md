@@ -207,6 +207,7 @@ honey-well/
 ├── tests/
 │   └── test_pipeline.py     # Automated testing suite
 ├── README.md                # Project documentation
+├── REPORT.md                # Project assumptions, metrics, and limitations
 └── streamlit_app.py         # Streamlit dashboard
 ```
 
